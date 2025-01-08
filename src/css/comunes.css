@@ -1,0 +1,115 @@
+:root {
+    --oscuro: #134169;
+    --claro: #325579;
+    --letra: #EDF0DE;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    background-color: var(--claro);
+    padding: 0 50px 20px 50px;
+}
+
+/* ORGANIZACION DEL ENCABEZADO */
+
+.logo_untdf, .logo_index, .iconos {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos {
+    width: 30%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo_index {
+    width: 45%;
+}
+
+.logo_untdf {
+    width: 25%;
+}
+
+/* TAMAÑO DE LOS LOGOS */
+
+/* Asegura que las imágenes no desborden su contenedor */
+.logo_untdf img, .logo_index img, .iconos img {
+    max-height: 100%; 
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.logo_untdf img {
+    height: 50px;
+    width: auto;
+}
+
+.logo_index img {
+    height: 100px;
+    width: auto;
+}
+
+.iconos img {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/* BORDE DEL LOGO PRINCIPAL*/
+
+#borde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--oscuro);
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        height: auto;
+        padding: 20px;
+    }
+
+    .iconos {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo_untdf {
+        width: 150px;
+    }
+
+    .logo_index {
+        width: 150px;
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS MEDIANAS */
+@media (min-width: 769px) and (max-width: 1150px) {
+    /* Hacer que el logo SIU ocupe el 100% del ancho disponible */
+    .logo_siu {
+        width: 100%;
+        height: auto;
+    }
+}
