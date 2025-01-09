@@ -1,22 +1,21 @@
-function cargarContenido(id, path) {
-    // Obtener archivo
-    const archivo = fetch(path);
+async function cargarContenido(id, path) {
+    try {
+        const archivo = await fetch(path);
+        const elemento = document.querySelector(id);
 
-    // Procesar respuesta
-    const contenido = archivo.then(response => {
-        if (!response.ok) console.log('No se pudo cargar el archivo: ' + path);
-        return response.text();
-    });
+        if (!archivo.ok) {
+            elemento.innerHTML = `<p>Error: No se pudo cargar el contenido desde ${path}</p>`;
+            return;
+        }
 
-    // Obtener y cargar datos al dom
-    const elemento = document.querySelector(id);
-
-    contenido.then(datos => {
+        const datos = await archivo.text();
         elemento.innerHTML = datos;
-    })
-    .catch(error => {
-        console.error('Error al cargar el contenido:', error);
-    });
+
+    } catch (error) {
+        const elemento = document.querySelector(id);
+        elemento.innerHTML = `<p>Error al cargar el contenido. Por favor, inténtalo más tarde.</p>`;
+        console.error(`Error al cargar el contenido (${path}):`, error);
+    }
 }
 
 cargarContenido("#header", "../html/header.html");

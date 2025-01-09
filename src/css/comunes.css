@@ -113,3 +113,137 @@ header {
         height: auto;
     }
 }
+
+/* MENU DE NAVEGACION */
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -25px;
+    font-size: 1.5rem;
+}
+
+/* ORGANIZACIÓN DEL MENU PRINCIPAL */
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: var(--oscuro);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+
+.menu-item {
+    position: relative;
+    height: 2em;
+    flex-grow: 1;
+}
+
+.menu-item > a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-item > a:hover {
+    background-color: var(--claro);
+}
+
+.menu a {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ultimo-item {
+    border-radius: 0 40px 40px 0;
+}
+
+/* ORGANIZACION DE LOS SUBMENUS */
+
+.submenu {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    border-radius: 0 0 10px 10px;
+    list-style-type: none;
+    background-color: var(--claro);
+    top: 100%;
+    left: 0;
+}
+
+.submenu-item {
+    display: flex;
+}
+
+.submenu-item a {
+    flex-grow: 1;
+    padding: 5px 10px;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.submenu-item > a:hover {
+    background-color: #444;
+}
+
+.menu-item:hover .submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.ultimo-subitem {
+    border-radius: 0 0 10px 10px;
+}
+
+/* DECORACIONES EXTRA */
+
+.flecha {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: white transparent transparent transparent;
+}
+
+.borde {
+    background-color: white;
+    height: 80%;
+    width: 3px;
+    border-radius: 10px;
+}
+
+/* Redondear bordes extremos*/
+
+.menu-item:last-child a:hover {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.submenu-item:last-child a:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu-item:first-child > a:hover {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.menu-item:first-child .submenu {
+    margin-left: 20px;
+}
