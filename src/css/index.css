@@ -1,0 +1,144 @@
+:root {
+    --principal: rgba(20, 26, 121, 0);
+}
+
+main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex: 1 1 0;
+    color: var(--principal);
+}
+
+/* NOTICIAS */
+
+.noticia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DESPLAZAMIENTO */
+
+.flecha-izquierda, .flecha-derecha {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.flecha-izquierda {
+    left: 0;
+}
+  
+.flecha-derecha {
+    right: 0;
+    transform: rotate(180deg);
+}
+  
+.flecha-izquierda:hover, .flecha-derecha:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+/* INSTITUTOS */
+
+.institutos {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+  
+.institutos a {
+    display: flex;
+}
+
+.institutos img {
+    height: 80px;
+    width: auto;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.institutos a:hover img {
+    transform: scale(1.1);
+}
+
+/* INFORMACION*/
+
+.info {
+    position: absolute;
+    bottom: 20%;
+    left: 12.5%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+    max-width: 50%;
+    max-height: 30%;
+}
+  
+.info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+  
+.info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* NOTICIA */
+  
+.leer-mas {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+.leer-mas .decoracion {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.leer-mas:hover {
+    color: #00bfff; /* Azul claro */
+}
+
+.leer-mas:hover .decoracion {
+    transform: translateX(5px); /* Desplaza la flecha hacia la derecha */
+}
+
+
+/* CLASES PARA ANIMACIÓN DE NOTICIA */
+
+.noticia {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.noticia.fade-out {
+    opacity: 0;
+}
+
+.noticia.fade-in {
+    opacity: 1;
+}

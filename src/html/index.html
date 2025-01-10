@@ -12,7 +12,30 @@
     <nav id="nav"></nav>
     <script src="../js/header-nav.js"></script>
     <main>
-        <!-- Contenido principal de la página -->
+        <div class="noticia">
+            <img src="" alt="Noticia">
+            <div class="info">
+                <h2></h2>
+                <p></p>
+                <a href="" class="leer-mas">
+                    Leer más <span class="decoracion">→</span>
+                </a>
+            </div>
+        </div>
+        <button class="flecha-izquierda" type="button" onclick="cambiarNoticiaIzquierda()">
+            <img src="../../img/auxiliares/flecha-atras.svg">
+        </button>
+        <div class="institutos">
+            <a href="https://untdf.edu.ar/institutos/icpa/informacion"><img src="../../img/logo/logo_icpa.png" alt="logo_icpa"></a>
+            <a href="https://untdf.edu.ar/institutos/icse/informacion"><img src="../../img/logo/logo_icse.png" alt="logo_icse"></a>
+            <a href="https://untdf.edu.ar/institutos/idei/informacion"><img src="../../img/logo/logo_idei.png" alt="logo_idei"></a>
+            <a href="https://untdf.edu.ar/institutos/IEC/informacion"><img src="../../img/logo/logo_iec.png" alt="logo_iec"></a>
+        </div>
+        <button class="flecha-derecha" type="button" onclick="cambiarNoticiaDerecha()">
+            <img src="../../img/auxiliares/flecha-atras.svg">
+        </button>
     </main>
+    <script src="../js/index.js"></script>
+    <script src="../js/comunes.js"></script>
 </body>
 </html>
