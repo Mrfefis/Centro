@@ -1,0 +1,90 @@
+main {
+    display: grid;
+    background-color: var(--muy-oscuro);
+    grid-template-columns: 3fr 1fr;
+    flex: 1 1 0;
+}
+
+/* IMAGENES E HISTORIA */
+
+.historia-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.historia-item {
+    display: flex;
+    margin: 20px 0;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.historia-item img {
+    margin: 0 20px;
+    width: 500px;
+    height: 300px;
+    background-color: red;
+}
+
+.item-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.item-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: var(--claro);
+    color: white;
+    border-radius: 50px;
+    width: 400px;
+    text-shadow: 0 1px 1px black;
+    text-align: center;
+}
+
+/* LINEA DEL TIEMPO */
+
+.historia-opciones {
+    margin: 80px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea-tiempo {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-left: solid white 5px;
+}
+
+.item-tiempo {
+    margin: 20px 0;
+    margin-left: 10px;
+}
+
+.item-tiempo button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    transition: font-size 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.item-tiempo button:hover {
+    font-size: 2em; /* Aumenta el tamaño de la fuente */
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    cursor: pointer;
+}

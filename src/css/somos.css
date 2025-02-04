@@ -1,0 +1,91 @@
+main {
+    width: 100%;
+    flex: 1 1 0;
+    background-color: var(--muy-oscuro);
+    color: white;
+}
+
+/* Presentacion */
+
+.presentacion {
+    padding: 50px 0;
+    padding-bottom: 20px;
+    max-width: 1500px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--claro);
+    border-radius: 80%;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    text-align: center;
+    font-size: 22px;
+}
+
+.imagen {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+/* Integrantes */
+
+.integrantes {
+    display: grid;
+    padding: 20px 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    padding-bottom: 50px;
+    background-color: var(--muy-oscuro);
+}
+
+.tarjeta {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    background-color: red;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    box-shadow: black 0 0 40px;
+}
+
+.texto {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: var(--claro);
+    border-radius: 60%;
+}
+
+.texto p {
+    text-align: center;
+}
+
+.titulo-integrantes {
+    padding: 10px;
+    background-color: var(--oscuro);
+}
+
+.titulo-integrantes a {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+}

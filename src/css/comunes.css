@@ -1,9 +1,10 @@
 :root {
+    --muy-oscuro: #0c2a44;
     --oscuro: #134169;
     --claro: #325579;
     --letra: #EDF0DE;
 }
-
+    
 body {
     margin: 0;
     padding: 0;
