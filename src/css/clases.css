@@ -1,0 +1,93 @@
+main {
+    flex: 1 1 0;
+    background-color: var(--muy-oscuro);
+}
+
+.clase-titulo {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.clase-titulo button {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    transition: font-size 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.clase-titulo button:hover {
+    cursor: pointer;
+    font-size: 3em; /* Aumenta el tamaño de la fuente */
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+}
+
+.clases {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.clase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--claro);
+    border-radius: 80%;
+    height: 8em;
+    width: 14em;
+}
+
+.clase:hover {
+    background-color: var(--oscuro);
+    cursor: pointer;
+}
+
+.clase p {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+/* Tarjeta */
+
+.tarjeta-imagen img {
+    height: 500px;
+    width: 320px;
+    border-radius: 5%;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-descripcion {
+    font-size: 1.2em;
+    color: var(--gris-claro);
+    margin-left: 100px;
+}
+
+.tarjeta-profe {
+    margin-bottom: 100px;
+}
+
+.tarjeta-boton {
+    margin-top: 100px;
+    background-color: var(--claro);
+    color: var(--letra);
+    border: none;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 15px;
+}
+
+.tarjeta-boton:hover {
+    cursor: pointer;
+    background-color: var(--oscuro);
+}

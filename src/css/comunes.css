@@ -3,8 +3,11 @@
     --oscuro: #134169;
     --claro: #325579;
     --letra: #EDF0DE;
+    --gris-claro: #ECECEC;
+    --fuente-principal: 'Hanken Grotesk', sans-serif;
+    --fuente-secundaria: 'Questrial', sans-serif;
 }
-    
+
 body {
     margin: 0;
     padding: 0;
