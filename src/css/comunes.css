@@ -2,6 +2,7 @@
     --muy-oscuro: #0c2a44;
     --oscuro: #134169;
     --claro: #325579;
+    --pea: #214f76;
     --letra: #EDF0DE;
     --gris-claro: #ECECEC;
     --fuente-principal: 'Hanken Grotesk', sans-serif;
@@ -326,4 +327,20 @@ nav {
     .flecha {
         display: none;
     }
+}
+
+/* COMPONENTES */
+
+.componente-fondo {
+    position: absolute;
+    z-index: 0;
+    background-color: var(--pea);
+    border-radius: 50%;
+}
+
+.componente-parrafo {
+    position: relative;
+    z-index: 1;
+    color: var(--letra);
+    font-size: 1.2em;
 }
