@@ -1,0 +1,49 @@
+main {
+    flex: 1 1 0;
+    background-color: var(--muy-oscuro);
+    display: flex;
+    flex-direction: column;
+    color: var(--letra);
+}
+
+.titulo-donaciones {
+    font-size: 2em;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.donaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 100px;
+}
+
+.donacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.donacion img {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+
+.donacion p {
+    text-align: center;
+}
+
+.componente-parrafo {
+    width: 300px;
+}
+
+.componente-fondo {
+    width: 300px;
+    height: 150px;
+    margin-top: 5px;
+}

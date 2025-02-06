@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    background-color: var(--muy-oscuro);
+}
+
+.titulo-emprendimientos {
+    margin: 10px 0;
+    padding-right: 220px;
+}
+
+.componente-fondo {
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 250px;
+    height: 80px;
+}
+
+.componente-parrafo {
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 2em;
+}
+
+.emprendimientos {
+    display: grid;
+    justify-items: center;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--letra);
+    margin: 50px 0;
+}
+
+.tarjeta img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: var(--oscuro);
+    border: solid 5px var(--claro);
+    border-radius: 100%;
+}
+
+.tarjeta p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.tarjeta:hover img {
+    border-color: var(--pea);
+}
+
+.tarjeta:hover p {
+    text-shadow: 0 0 2px var(--letra);
+}
