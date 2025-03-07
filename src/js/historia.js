@@ -60,6 +60,12 @@ function createContenido(contenido, invertir = false){
         lista.appendChild(item);
     }
 
+    let mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    if (mediaQuery.matches) {
+        invertir = false;
+    }
+
     if (invertir){
         contenedor.appendChild(lista);
         contenedor.appendChild(imagen);

@@ -25,8 +25,9 @@ for (let emprendimiento of emprendimientos){
 function createTarjeta(emprendimiento){
     const imagen = document.createElement("img");
     imagen.src = emprendimiento.imagen;
-    //const imagenCont = document.createElement("div");
-    //imagenCont.appendChild(imagen);
+    const imagenCont = document.createElement("div");
+    imagenCont.classList.add("tarjeta-imagen");
+    imagenCont.appendChild(imagen);
 
     const parrafo = document.createElement("p");
     parrafo.innerHTML = emprendimiento.nombre;
@@ -34,7 +35,7 @@ function createTarjeta(emprendimiento){
     const tarjeta = document.createElement("a");
     tarjeta.href = emprendimiento.link;
     tarjeta.classList.add("tarjeta");
-    tarjeta.appendChild(imagen);
+    tarjeta.appendChild(imagenCont);
     tarjeta.appendChild(parrafo);
 
     return tarjeta;

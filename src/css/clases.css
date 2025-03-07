@@ -91,3 +91,34 @@ main {
     cursor: pointer;
     background-color: var(--oscuro);
 }
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    .clases {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta {
+        flex-direction: column;
+    }
+
+    .tarjeta-descripcion {
+        margin: 0;
+    }
+
+    .tarjeta-profe {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .tarjeta-boton {
+        margin: 5px 0 20px 0;
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS MEDIANAS */
+@media (min-width: 769px) and (max-width: 1150px){
+    .clases {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

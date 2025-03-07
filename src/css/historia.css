@@ -88,3 +88,46 @@ main {
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); /* Sombra del texto */
     cursor: pointer;
 }
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .historia-opciones {
+        position: static;
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .linea-tiempo {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: var(--muy-oscuro);
+        flex-direction: row;
+        border: none;
+        border-top: solid white 5px;
+    }
+    
+    .historia-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .historia-item {
+        flex-direction: column;
+    }
+
+    .historia-item img {
+        margin: 0;
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS MEDIANAS */
+@media (min-width: 769px) and (max-width: 1150px){}

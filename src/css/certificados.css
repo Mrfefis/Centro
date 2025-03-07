@@ -68,3 +68,30 @@ main {
     width: 340px;
     height: 140px;
 }
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        z-index: 0;
+    }
+
+    .certificado-comentario {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .certificados ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .certificado-item {
+        min-width: 200px;
+        padding: 0 10px;
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS MEDIANAS */
+@media (min-width: 769px) and (max-width: 1150px){
+}

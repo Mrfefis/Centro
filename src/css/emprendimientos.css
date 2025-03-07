@@ -1,4 +1,5 @@
 main {
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +15,7 @@ main {
 .componente-fondo {
     margin-top: 35px;
     margin-left: 10px;
-    width: 250px;
+    width: 210px;
     height: 80px;
 }
 
@@ -41,7 +42,7 @@ main {
     margin: 50px 0;
 }
 
-.tarjeta img {
+.tarjeta-imagen {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,10 +59,24 @@ main {
     font-size: 1.5em;
 }
 
-.tarjeta:hover img {
+.tarjeta-imagen:hover {
     border-color: var(--pea);
 }
 
 .tarjeta:hover p {
     text-shadow: 0 0 2px var(--letra);
+}
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    .emprendimientos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS MEDIANAS */
+@media (min-width: 769px) and (max-width: 1150px){
+    .emprendimientos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

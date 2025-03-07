@@ -97,3 +97,23 @@ main {
     background-color: var(--oscuro);
     cursor: pointer;
 }
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .dudas-frecuentes {
+        align-items: center;
+    }
+
+    .otras-dudas {
+        padding: 0 20px;
+    }
+
+    .otras-dudas textarea {
+        width: 100%;
+        max-width: 500px;
+    }
+}
