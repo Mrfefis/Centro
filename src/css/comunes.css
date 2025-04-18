@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Inter", sans-serif;
 }
 
 /* ENCABEZADO */
@@ -217,18 +218,42 @@ nav {
     margin-left: 20px;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: #134169;
+}
+
+/* INSTITUTOS */
+
+.institutos {
+    display: flex;
+    flex-direction: column;
+}
+
+.institutos img {
+    height: 80px;
+}
+
+.links-institutos {
+    display: flex;
+    gap: 20px;
+}
+
 /* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
 @media (max-width: 768px) {
     header {
-        z-index: 1;
-        position: fixed;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-content: space-between;
         height: 200px;
         width: 100%;
-        padding: 20px;
+        padding: 20px 0;
+        margin: 0;
     }
 
     .iconos {
@@ -246,12 +271,10 @@ nav {
     }
 
     nav {
+        position: static;
         display: flex;
         flex-direction: column;
-        position: fixed;
         width: 100%;
-        top: 230px;
-        left: 0;
     }
 
     .menu, .borde, .flecha {
@@ -352,8 +375,8 @@ nav {
         font-size: 1.4rem;
     }
 
-    main {
-        margin-top: 303px;
+    footer {
+        flex-direction: column;
     }
 }
 

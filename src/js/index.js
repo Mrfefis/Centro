@@ -70,5 +70,3 @@ function cambiarNoticiaIzquierda() {
     indiceActual = (indiceActual - 1 + noticias.length) % noticias.length;
     actualizarNoticia();
 }
-
-actualizarNoticia();

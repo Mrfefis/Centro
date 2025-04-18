@@ -20,3 +20,4 @@ async function cargarContenido(id, path) {
 
 cargarContenido("#header", "../html/header.html");
 cargarContenido("#nav", "../html/nav.html");
+cargarContenido("#footer", "../html/footer.html");
