@@ -1,0 +1,286 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 0;
+    color: var(--pea);
+    font-family: 'Inter', sans-serif;
+}
+
+/* GENERAL */
+
+.clases-de-apoyo, .dudas-frecuentes {
+    background-color: var(--gris-claro);
+}
+
+.titulo-clases, .titulo-dudas {
+    margin-top: 50px;
+    font-size: 2em;
+    margin-left: 5%;
+}
+
+/* CLASES DE APOYO */
+
+.lista-clases {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CLASE DE APOYO */
+
+.item-clase {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.item-clase img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.titulo-item {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+/* DUDAS FRECUENTES */
+
+.lista-dudas {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+
+.item-duda {
+    list-style-type: none;
+    color: #454545;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+/* CERTIFICADOS */
+
+.certificados {
+    background-color: var(--gris-claro);
+}
+
+.certificados-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.certificados-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.certificados-titulo {
+    color: #eee;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--pea);
+}
+
+.certificados-comentario, .certificados-links, .certificados-advertencia {
+    padding: 0 60px;
+}
+
+.certificados-comentario {
+    font-weight: normal;
+}
+
+.certificado-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.certificado-item img {
+    height: auto;
+    width: 25px;
+}
+
+.certificado-item a {
+    text-decoration: none;
+    color: var(--pea);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.certificados-advertencia {
+    max-width: 600px;
+    font-weight: bold;
+    color: #E66D6D;
+    margin: 50px auto;
+    font-size: 1.5em;
+}
+
+/* EMPRENDIMIENTOS */
+
+.emprendimientos {
+    background-color: var(--gris-claro);
+}
+
+.emprendimientos-titulo {
+    color: var(--gris-claro);
+    background-color: var(--pea);
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.emprendimientos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* EMPRENDIMIENTO */
+
+.emprendimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 300px;
+}
+
+.emprendimiento a {
+    text-decoration: none;
+    color: var(--pea)
+}
+
+.emprendimiento img {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+    background-color: #454545;
+}
+
+.emprendimiento-auxiliar {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.emprendimiento h3 {
+    width: 170px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* LOGO INSTAGRAM */
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram h4 {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.logo-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: solid 5px var(--pea);
+    border-radius: 30%;
+}
+
+.logo-instagram-foco {
+    width: 20px;
+    height: 20px;
+    border: solid 5px var(--pea);
+    border-radius: 100%;
+}
+
+.logo-instagram-puntito {
+    position: absolute;
+    right: 3px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--pea);
+    border-radius: 100%;
+}
+
+/* 
+* TODO: ORDENAR LAS ANIMACIONES
+*
+*
+*/
+
+.item-duda-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ocultar checkbox nativo */
+.item-duda-input {
+    display: none;
+}
+
+.item-duda-decoracion {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: var(--gris-claro); /* Color por defecto */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Cambia el color y escala al marcar */
+.item-duda-input:checked + .item-duda-decoracion {
+    background-color: var(--pea);
+    transform: scale(1.1);
+}
+
+/* Animación del gradiente */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.item-duda-decoracion::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar el check cuando está marcado */
+.item-duda-input:checked + .item-duda-decoracion::after {
+    opacity: 1;
+}
+
+.item-duda-contenido {
+    display: none;
+    transition: all 0.3s ease;
+}

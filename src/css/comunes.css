@@ -4,7 +4,7 @@
     --claro: #325579;
     --pea: #214f76;
     --letra: #EDF0DE;
-    --gris-claro: #ECECEC;
+    --gris-claro: #F5F6EE;
     --fuente-principal: 'Hanken Grotesk', sans-serif;
     --fuente-secundaria: 'Questrial', sans-serif;
 }
@@ -225,6 +225,7 @@ footer {
     justify-content: space-between;
     padding: 20px 50px;
     color: #134169;
+    background-color: var(--gris-claro);
 }
 
 /* INSTITUTOS */
@@ -235,11 +236,13 @@ footer {
 }
 
 .institutos img {
+    width: auto;
     height: 80px;
 }
 
 .links-institutos {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 

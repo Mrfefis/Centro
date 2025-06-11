@@ -140,7 +140,7 @@ main {
     flex-wrap: wrap;
     padding-left: 20px;
     justify-content: center;
-    background-color: #F5F6EE;
+    background-color: var(--gris-claro);
     max-width: 100%;
 }
 
